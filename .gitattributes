@@ -1,0 +1,17 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.bib text eol=lf
+*.cff text eol=lf
+# Preserve the supplied corpus bytes, including embedded line breaks.
+datasets/*.csv -text -diff
+datasets/summary.csv text eol=lf diff
+data/simulator/*.csv -text -diff
+# Keep imported reference assets and notices exactly as received.
+data/simulator/*.json -text -whitespace
+legacy/experiment_notes.txt -text -whitespace
+licenses/MultiDoGO-* -text -whitespace
+*.png binary
+*.zip binary

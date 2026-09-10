@@ -1,0 +1,7 @@
+domain,source_rows,annotated_rows,unscorable_rows,politeness_label_0_rows,politeness_label_1_rows,politeness_label_2_rows,politeness_label_3_rows
+airline,237536,237515,21,86797,4208,89516,56994
+fastfood,181156,181129,27,77556,5267,76963,21343
+finance,157625,157622,3,62073,2545,66143,26861
+insurance,229982,229975,7,86869,2176,90320,50610
+media,487003,486983,20,183302,5157,178999,119525
+software,86224,86221,3,33431,844,30292,21654

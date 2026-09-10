@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+.DS_Store
+__MACOSX/
+
+# Keep the supplied data archive locally; the CSV contents are versioned.
+/RL_PADS_Data.zip
+
+# Generated runs and externally supplied model checkpoints.
+/runs/
+/checkpoints/
+/outputs_dstc1/
+/outputs/
+/cache_dir/
+*.ckpt*
+events.out.tfevents.*
+
+# Local annotation tooling; dataset artifacts and their verification are tracked.
+/scripts/annotate_dataset.py
+/scripts/annotate_slurm.sh
+/tests/test_annotation_pipeline.py
+/pads-annotate-*.log
+
+# Annotation execution artifacts remain local.
+/prompts/
+/datasets/annotation_prompt.txt
+/docs/annotation-protocol.md
+/docs/annotation-diagnostics.json
+/docs/pilot-review.json

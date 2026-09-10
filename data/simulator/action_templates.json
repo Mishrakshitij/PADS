@@ -1,0 +1,11 @@
+{
+    "0": "Hello. I'm an automated dialogue system that can give you Bus schedule information. To start with, Please, tell us, where do you want to go?",
+    "1": "Thank you! for providing us your <a>, Please, also tell us Where would you like to leave from?",
+    "2": "Thank you! Your source and destiantion are <a>, <d>. Please, also provide us the time at which you want to travel",
+    "3": "Sorry, for inconvenience. Let me look that up for you. There is a <route> leaving from <departure> to <arrival> at <time>.",
+    "4": "Let me look that up for you. Sorry, there is no result that matches your request. We hope, we had been of help.",
+    "5": "where do you want to go?",
+    "6": "where are you leaving from?",
+    "7": "what time do you want to travel?",
+    "8": "Thank you for using the system, good bye!"
+}

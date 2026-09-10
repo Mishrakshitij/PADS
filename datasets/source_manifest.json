@@ -1,0 +1,379 @@
+{
+  "format_version": 1,
+  "encoding": "utf-8",
+  "source_archive": {
+    "filename": "RL_PADS_Data.zip",
+    "bytes": 62595512,
+    "sha256": "d1d03996910dd90d102faabd50f07ad3ef556ce38b17a1f5cd5f5f2a4834ce2d"
+  },
+  "header": [
+    "",
+    "id",
+    "prediction",
+    "pred_score",
+    "conversation_id",
+    "root",
+    "speaker",
+    "text",
+    "turnNumber"
+  ],
+  "packaging": {
+    "method": "Original bytes retained; media split at CSV record boundaries with original header repeated.",
+    "media_shard_max_bytes": 50331648,
+    "file_paths_relative_to": "datasets/",
+    "excluded_archive_entries": [
+      "RL_PADS_Data/",
+      "__MACOSX/"
+    ]
+  },
+  "domains": [
+    {
+      "domain": "airline",
+      "source": {
+        "archive_member": "RL_PADS_Data/airline_polite_pred_data.csv",
+        "bytes": 51313883,
+        "sha256": "8c3343bf05d492aefb7f7dbde6d2755fd5b4e8eadcd5862c34e690cb58fba906",
+        "rows": 237536
+      },
+      "files": [
+        {
+          "path": "airline_polite_pred_data.csv",
+          "bytes": 51313883,
+          "sha256": "8c3343bf05d492aefb7f7dbde6d2755fd5b4e8eadcd5862c34e690cb58fba906",
+          "rows": 237536
+        }
+      ],
+      "statistics": {
+        "conversations": 15108,
+        "unique_ids": 138293,
+        "speaker_counts": {
+          "agent": 106096,
+          "customer": 122178,
+          "empty": 9232,
+          "other": 30
+        },
+        "prediction_counts": {
+          "0": 111548,
+          "1": 125988
+        },
+        "empty_field_counts": {
+          "": 0,
+          "id": 0,
+          "prediction": 0,
+          "pred_score": 0,
+          "conversation_id": 0,
+          "root": 0,
+          "speaker": 9232,
+          "text": 0,
+          "turnNumber": 0
+        },
+        "prediction_score_min": 0.02292065454703308,
+        "prediction_score_max": 0.9999210668533469,
+        "turn_number_min": 0,
+        "turn_number_max": 44,
+        "invalid_or_nonfinite_prediction_score_rows": 0,
+        "noninteger_turn_number_rows": 22,
+        "mean_text_characters": 50.364703,
+        "multiline_text_rows": 0,
+        "root_equals_conversation_id_rows": 237536,
+        "text_rows_matching_email_pattern": 6529,
+        "text_rows_with_at_mentions": 20,
+        "text_rows_with_http_urls": 8,
+        "prediction_score_threshold_0_5_mismatches": 0,
+        "prediction_score_exactly_0_5_rows": 0
+      }
+    },
+    {
+      "domain": "fastfood",
+      "source": {
+        "archive_member": "RL_PADS_Data/fastfood_polite_pred_data.csv",
+        "bytes": 38184887,
+        "sha256": "c1e63809a3442c0cbf061b72b533759e56092e99de596bbe97cbe4a5cb8d6ad2",
+        "rows": 181156
+      },
+      "files": [
+        {
+          "path": "fastfood_polite_pred_data.csv",
+          "bytes": 38184887,
+          "sha256": "c1e63809a3442c0cbf061b72b533759e56092e99de596bbe97cbe4a5cb8d6ad2",
+          "rows": 181156
+        }
+      ],
+      "statistics": {
+        "conversations": 10155,
+        "unique_ids": 143323,
+        "speaker_counts": {
+          "agent": 81620,
+          "customer": 91585,
+          "empty": 7663,
+          "other": 288
+        },
+        "prediction_counts": {
+          "0": 93547,
+          "1": 87609
+        },
+        "empty_field_counts": {
+          "": 0,
+          "id": 0,
+          "prediction": 0,
+          "pred_score": 0,
+          "conversation_id": 0,
+          "root": 0,
+          "speaker": 7663,
+          "text": 0,
+          "turnNumber": 0
+        },
+        "prediction_score_min": 0.033599650438745264,
+        "prediction_score_max": 0.9999950335970876,
+        "turn_number_min": 0,
+        "turn_number_max": 48,
+        "invalid_or_nonfinite_prediction_score_rows": 0,
+        "noninteger_turn_number_rows": 997,
+        "mean_text_characters": 45.626802,
+        "multiline_text_rows": 0,
+        "root_equals_conversation_id_rows": 181156,
+        "text_rows_matching_email_pattern": 4,
+        "text_rows_with_at_mentions": 0,
+        "text_rows_with_http_urls": 230,
+        "prediction_score_threshold_0_5_mismatches": 0,
+        "prediction_score_exactly_0_5_rows": 0
+      }
+    },
+    {
+      "domain": "finance",
+      "source": {
+        "archive_member": "RL_PADS_Data/finance_polite_pred_data.csv",
+        "bytes": 33492026,
+        "sha256": "33bfb8e723de8c8070c88850117d4c100ab0e53912b3b743aecbec9f069ac268",
+        "rows": 157625
+      },
+      "files": [
+        {
+          "path": "finance_polite_pred_data.csv",
+          "bytes": 33492026,
+          "sha256": "33bfb8e723de8c8070c88850117d4c100ab0e53912b3b743aecbec9f069ac268",
+          "rows": 157625
+        }
+      ],
+      "statistics": {
+        "conversations": 9154,
+        "unique_ids": 157218,
+        "speaker_counts": {
+          "agent": 63940,
+          "customer": 78706,
+          "empty": 14943,
+          "other": 36
+        },
+        "prediction_counts": {
+          "0": 80357,
+          "1": 77268
+        },
+        "empty_field_counts": {
+          "": 0,
+          "id": 0,
+          "prediction": 0,
+          "pred_score": 0,
+          "conversation_id": 0,
+          "root": 0,
+          "speaker": 14943,
+          "text": 0,
+          "turnNumber": 0
+        },
+        "prediction_score_min": 0.0205464762765095,
+        "prediction_score_max": 0.9998594350705906,
+        "turn_number_min": 0,
+        "turn_number_max": 45,
+        "invalid_or_nonfinite_prediction_score_rows": 0,
+        "noninteger_turn_number_rows": 396,
+        "mean_text_characters": 47.37199,
+        "multiline_text_rows": 0,
+        "root_equals_conversation_id_rows": 157625,
+        "text_rows_matching_email_pattern": 14,
+        "text_rows_with_at_mentions": 2,
+        "text_rows_with_http_urls": 1,
+        "prediction_score_threshold_0_5_mismatches": 0,
+        "prediction_score_exactly_0_5_rows": 0
+      }
+    },
+    {
+      "domain": "insurance",
+      "source": {
+        "archive_member": "RL_PADS_Data/insurance_polite_pred_data.csv",
+        "bytes": 49389325,
+        "sha256": "87f74d8c4fd95d08da6ccb6341c066c6dc0d7a2111b93d4f25c92b3530fb023b",
+        "rows": 229982
+      },
+      "files": [
+        {
+          "path": "insurance_polite_pred_data.csv",
+          "bytes": 49389325,
+          "sha256": "87f74d8c4fd95d08da6ccb6341c066c6dc0d7a2111b93d4f25c92b3530fb023b",
+          "rows": 229982
+        }
+      ],
+      "statistics": {
+        "conversations": 14301,
+        "unique_ids": 137544,
+        "speaker_counts": {
+          "agent": 102299,
+          "customer": 117005,
+          "empty": 10622,
+          "other": 56
+        },
+        "prediction_counts": {
+          "0": 103339,
+          "1": 126643
+        },
+        "empty_field_counts": {
+          "": 0,
+          "id": 0,
+          "prediction": 0,
+          "pred_score": 0,
+          "conversation_id": 0,
+          "root": 0,
+          "speaker": 10622,
+          "text": 0,
+          "turnNumber": 0
+        },
+        "prediction_score_min": 0.023098455517328625,
+        "prediction_score_max": 0.999940062491842,
+        "turn_number_min": 0,
+        "turn_number_max": 51,
+        "invalid_or_nonfinite_prediction_score_rows": 0,
+        "noninteger_turn_number_rows": 241,
+        "mean_text_characters": 49.173444,
+        "multiline_text_rows": 0,
+        "root_equals_conversation_id_rows": 229982,
+        "text_rows_matching_email_pattern": 3678,
+        "text_rows_with_at_mentions": 25,
+        "text_rows_with_http_urls": 3,
+        "prediction_score_threshold_0_5_mismatches": 0,
+        "prediction_score_exactly_0_5_rows": 0
+      }
+    },
+    {
+      "domain": "media",
+      "source": {
+        "archive_member": "RL_PADS_Data/media_polite_pred_data.csv",
+        "bytes": 109645726,
+        "sha256": "5ec7476b2298f33c2284c505d10f260bb19d6ebda735476d900e40e2c17e3e9c",
+        "rows": 487003
+      },
+      "files": [
+        {
+          "path": "media_polite_pred_data.part-001.csv",
+          "bytes": 50331611,
+          "sha256": "cb2aa53779208587f03b530f5ab29b89e1551c6c4ef408ed2af6b3566536f22a",
+          "rows": 254470
+        },
+        {
+          "path": "media_polite_pred_data.part-002.csv",
+          "bytes": 50331508,
+          "sha256": "e3201d82a9ab10b2caabf6814acd87ebb46605ec897586527c5b61cf43e6e8a2",
+          "rows": 201917
+        },
+        {
+          "path": "media_polite_pred_data.part-003.csv",
+          "bytes": 8982749,
+          "sha256": "304ef96fc230d28312a650e9808f8ea7d1c42876a8aa62e2e2fcc99b0d0a00e8",
+          "rows": 30616
+        }
+      ],
+      "statistics": {
+        "conversations": 33862,
+        "unique_ids": 363394,
+        "speaker_counts": {
+          "agent": 225927,
+          "customer": 247628,
+          "empty": 13205,
+          "other": 243
+        },
+        "prediction_counts": {
+          "0": 226585,
+          "1": 260418
+        },
+        "empty_field_counts": {
+          "": 0,
+          "id": 0,
+          "prediction": 0,
+          "pred_score": 0,
+          "conversation_id": 0,
+          "root": 0,
+          "speaker": 13205,
+          "text": 0,
+          "turnNumber": 0
+        },
+        "prediction_score_min": 0.0205464762765095,
+        "prediction_score_max": 0.9999410261305188,
+        "turn_number_min": 0,
+        "turn_number_max": 52,
+        "invalid_or_nonfinite_prediction_score_rows": 0,
+        "noninteger_turn_number_rows": 1042,
+        "mean_text_characters": 59.380858,
+        "multiline_text_rows": 0,
+        "root_equals_conversation_id_rows": 487003,
+        "text_rows_matching_email_pattern": 1166,
+        "text_rows_with_at_mentions": 7,
+        "text_rows_with_http_urls": 0,
+        "prediction_score_threshold_0_5_mismatches": 0,
+        "prediction_score_exactly_0_5_rows": 0
+      }
+    },
+    {
+      "domain": "software",
+      "source": {
+        "archive_member": "RL_PADS_Data/software_polite_pred_data.csv",
+        "bytes": 18994937,
+        "sha256": "f002675c07838420c6008917350c6c5138a614c6c0cb0cce438651c251712e0a",
+        "rows": 86224
+      },
+      "files": [
+        {
+          "path": "software_polite_pred_data.csv",
+          "bytes": 18994937,
+          "sha256": "f002675c07838420c6008917350c6c5138a614c6c0cb0cce438651c251712e0a",
+          "rows": 86224
+        }
+      ],
+      "statistics": {
+        "conversations": 5566,
+        "unique_ids": 86224,
+        "speaker_counts": {
+          "agent": 37775,
+          "customer": 44101,
+          "empty": 4326,
+          "other": 22
+        },
+        "prediction_counts": {
+          "0": 40703,
+          "1": 45521
+        },
+        "empty_field_counts": {
+          "": 0,
+          "id": 0,
+          "prediction": 0,
+          "pred_score": 0,
+          "conversation_id": 0,
+          "root": 0,
+          "speaker": 4326,
+          "text": 0,
+          "turnNumber": 0
+        },
+        "prediction_score_min": 0.02421074528276326,
+        "prediction_score_max": 0.9999822409331796,
+        "turn_number_min": 0,
+        "turn_number_max": 50,
+        "invalid_or_nonfinite_prediction_score_rows": 0,
+        "noninteger_turn_number_rows": 4,
+        "mean_text_characters": 55.37979,
+        "multiline_text_rows": 0,
+        "root_equals_conversation_id_rows": 86224,
+        "text_rows_matching_email_pattern": 542,
+        "text_rows_with_at_mentions": 6,
+        "text_rows_with_http_urls": 41,
+        "prediction_score_threshold_0_5_mismatches": 0,
+        "prediction_score_exactly_0_5_rows": 0
+      }
+    }
+  ]
+}

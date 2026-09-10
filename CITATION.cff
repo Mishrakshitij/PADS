@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the PADS paper below. If you use the dialogue corpus, also cite MultiDoGO; both entries are in CITATION.bib."
+type: software
+title: "PADS: Politeness Adaptive Dialogue System"
+authors:
+  - family-names: Mishra
+    given-names: Kshitij
+  - family-names: Firdaus
+    given-names: Mauajama
+  - family-names: Ekbal
+    given-names: Asif
+repository-code: "https://github.com/Mishrakshitij/PADS"
+url: "https://github.com/Mishrakshitij/PADS"
+preferred-citation:
+  type: article
+  title: "Please be polite: Towards building a politeness adaptive dialogue system for goal-oriented conversations"
+  authors:
+    - family-names: Mishra
+      given-names: Kshitij
+    - family-names: Firdaus
+      given-names: Mauajama
+    - family-names: Ekbal
+      given-names: Asif
+  journal: Neurocomputing
+  volume: "494"
+  start: "242"
+  end: "254"
+  year: 2022
+  doi: "10.1016/j.neucom.2022.04.029"
+  url: "https://doi.org/10.1016/j.neucom.2022.04.029"

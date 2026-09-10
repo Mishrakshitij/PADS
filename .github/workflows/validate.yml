@@ -1,0 +1,41 @@
+name: Validate repository
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install simulator
+        run: python -m pip install .
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Check all dataset hashes and CSV records
+        run: python scripts/verify_dataset.py
+      - name: Run baseline smoke test
+        run: python -m pads simulate --episodes 20 --seed 42 --output runs/ci-baseline.csv
+
+  training:
+    runs-on: ubuntu-latest
+    env:
+      TF_CPP_MIN_LOG_LEVEL: '2'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install CPU training dependencies
+        run: python -m pip install . tensorflow-cpu==2.15.1
+      - name: Check recurrent training and checkpoint restoration
+        run: python -m unittest discover -s tests -v
